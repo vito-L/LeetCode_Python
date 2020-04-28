@@ -23,10 +23,21 @@
 """
 
 
+# 1
+# class Solution:
+#     def twoSum(self, nums, target):
+#         hashmap = {}
+#         for index, num in enumerate(nums):
+#             if target - num in hashmap:
+#                 return hashmap[target - num], index
+#             hashmap[num] = index
+
+# 2
 class Solution:
     def twoSum(self, nums, target):
         hashmap = {}
         for index, num in enumerate(nums):
-            if target - num in hashmap:
-                return hashmap[target - num], index
+            result = target - num
+            if result in hashmap:
+                return hashmap[result], index
             hashmap[num] = index
