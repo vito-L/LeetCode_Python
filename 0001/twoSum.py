@@ -33,6 +33,7 @@
 #             hashmap[num] = index
 
 # 2
+# 此解法用时54ms，内存消耗15.1MB
 class Solution:
     def twoSum(self, nums, target):
         hashmap = {}
